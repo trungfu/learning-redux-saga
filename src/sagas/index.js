@@ -1,14 +1,3 @@
-import { takeEvery, take, put, call } from 'redux-saga/effects';
+import imagesSaga from './imagesSaga';
 
-import { IMAGES } from '../constants';
-
-function* handleImagesLoad() {
-  console.log('fetching images');
-}
-
-// watcher saga
-function* rootSaga() {
-  takeEvery(IMAGES.LOAD, handleImagesLoad);
-}
-
-export default rootSaga;
+export default imagesSaga;
